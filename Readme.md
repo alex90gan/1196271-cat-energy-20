@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Ганичев](https://up.htmlacademy.ru/adaptive/20/user/1196271).
-* Наставник: [Елизавета Цыгвинцева]
+* Наставник: [Елизавета Цыгвинцева](https://up.htmlacademy.ru/adaptive/20/user/572195).
 
 ---
 
