@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Кэт энерджи»</title>
+    <link rel="stylesheet" type="text/css" href="./source/css/style.css">
+</head>
+
+<body class="page__body">
+    <header class="page-header">
+        <a class="page-header__logo">
+            <img src="./source/img/svg/logo-mobile.svg" width="33" height="38" alt="Логотип">
+            <img src="./source/img/svg/logotype-mobile.svg" width="101" height="18" alt="Логотип">
+        </a>
+        <nav class="main-nav">
+            <button class="main-nav__toggle" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item">
+                        <a href="index.html">
+                        Главная
+                        </a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="catalog.html">
+                        Каталог продукции
+                    </a>
+                    </li>
+                    <li class=" site-list__item site-list__item--active">
+                        <a>
+                        Подбор программы
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="page-main page-main--form">
+        <h1>Подбор программы</h1>
+        <p>Заполните анкету, и мы подберем
+            <br>программу питания для вашего кота
+        </p>
+        <form class="" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="">
+                <legend class="visually-hidden">Данные кота</legend>
+                <ul class="">
+                    <li class="">
+                        <label class="" for="name">Имя:*</label>
+                        <input class="" type="text" name="name" placeholder="Барсик" id="name">
+                    </li>
+                    <li class="">
+                        <label class="" for="weight">Вес (кг):*</label>
+                        <input class="" type="number" name="weight" placeholder="7" id="weight">
+                    </li>
+                    <li class="">
+                        <label class="" for="age">Возраст (лет):</label>
+                        <input class="" type="number" name="age" placeholder="7" id="age">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="filter-fieldset filter-fieldset-power">
+                <legend class="filter-legend">Выбор программы:</legend>
+                <ul class="filter-list power">
+                    <li class="filter-item">
+                        <input class="filter-input visually-hidden" type="radio" name="power" value="rechargeable" id="filter-rechargeable" checked>
+                        <label class="filter-label filter-label-radio" for="filter-rechargeable">Похудение</label>
+                    </li>
+                    <li class="filter-item">
+                        <input class="filter-input visually-hidden" type="radio" name="power" value="network" id="filter-network">
+                        <label class="filter-label filter-label-radio" for="filter-network">Набор массы</label>
+                    </li>
+                    <li class="filter-item">
+                        <input class="filter-input visually-hidden" type="radio" name="power" value="network" id="filter-network">
+                        <label class="filter-label filter-label-radio" for="filter-network">Не знаю (Нужен ваш совет)</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="">
+                <legend class="">Котактные данные<br>(владельца кота)</legend>
+                <ul class="">
+                    <li class="">
+                        <label class="" for="appointment-email">E-mail*:</label>
+                        <input class="" id="appointment-email" type="email" name="e-mail" placeholder="KUKLACHEV@GMAIL.COM">
+                    </li>
+                    <li class="">
+                        <label class="" for="appointment-telephone">Телефон*:</label>
+                        <input class="" id="appointment-telephone" type="tel" name="telephone" placeholder="8(960)900-60-90">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Комментарий</legend>
+                <textarea name="comment" id="appointment-comment" cols="30" rows="10">Расскажите обо всех повадках кота
+                </textarea>
+            </fieldset>
+            <fieldset class="">
+                <legend class="filter-legend">Дополнительно</legend>
+                <ul class="">
+                    <li class="">
+                        <input class="" type="checkbox" name="sugar" id="filter-sugar-substitute" checked>
+                        <label class="" for="filter-sugar-substitute"><em class=""></em>Сахаразаменитель</label>
+                    </li>
+                    <li class="">
+                        <input class="" type="checkbox" name="water" id="filter-water">
+                        <label class="" for="filter-water"><em class=""></em>Питьевая вода</label>
+                    </li>
+                    <li class="">
+                        <input class="" type="checkbox" name="milk" id="filter-milk" checked>
+                        <label class="" for="filter-milk"><em class=""></em>Молоко</label>
+                    </li>
+                    <li class="">
+                        <input class="" type="checkbox" name="vitamins" id="filter-vitamins">
+                        <label class="" for="filter-vitamins"><em class=""></em>Витамины</label>
+                    </li>
+                </ul>
+                <button class="" type="submit">Отправить зявку</button>
+                <small>* — Обязательные поля</small>
+            </fieldset>
+
+        </form>
+    </main>
+    <footer class="page-footer">
+        <div>
+            <div class="page-footer__contacts contacts">
+                <b class="contacts__title"> 
+                    приглашаем
+                    <br>к сотрудничеству дилеров!
+                </b>
+            </div>
+            <div>
+                <address class="copyright__address">
+                    ул. Большая
+                    <br>Конюшенная, д. 19/8
+                    <br>Санкт-Петербург
+                </address>
+            </div>
+        </div>
+        <img src="./source/img/png/location.png" width="320" height="362" alt="Карта проезда">
+        <img src="./source/img/svg/logotype-mobile.svg" width="128" height="24" alt="Логотип">
+        <div class="page-footer__wrapper">
+            <div class="page-footer__social social">
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="page-footer__copyright copyright">
+                <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+                <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                    <img class="copyright__image" src="./source/img/svg/html-1.svg" alt="Переход на сайт разработчиков">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
