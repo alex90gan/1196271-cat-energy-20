@@ -1,0 +1,74 @@
+.example {
+    .font-oswald(@family: Oswald; @style: normal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.example__wrapper {
+    width: 280px;
+    margin: 0 auto;
+}
+
+.example__heading {
+    .font-size(@size: 36px; @weight: 400);
+}
+
+.example__text {
+    .font-oswald(@family: Arial; @style: normal);
+    .font-size(@size: 14px; @weight: 400);
+    .indents(@margin: 0; @padding: 0);
+    margin-bottom: 25px;
+    &--price {
+        .font-oswald(@family: Oswald; @style: normal);
+        .font-size(@size: 14px; @weight: 400);
+        text-transform: uppercase;
+    }
+}
+
+.example__list {
+    .reset-list();
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.example__item {
+    min-width: 124px;
+    min-height: 64px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    .indents(@margin: 0; @padding: 0);
+    border: 1px solid @special_grey;
+    border-radius: 4px;
+}
+
+.example__span {
+    align-self: center;
+    .font-oswald(@family: Oswald; @style: normal);
+    .font-size(@size: 24px; @weight: 400);
+    .indents(@margin: 0; @padding: 0);
+    line-height: 24px;
+    text-transform: uppercase;
+    color: @basic_black;
+    &--index {
+        display: block;
+        position: absolute;
+        .indents(@margin: 0; @padding: 0);
+        top: 57px;
+        left: 25px;
+        z-index: 2;
+        align-self: end;
+        .font-oswald(@family: Arial; @style: normal);
+        .font-size(@size: 12px; @weight: 400);
+        color: @special_dark-grey;
+        line-height: 12px;
+    }
+}
