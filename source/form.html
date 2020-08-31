@@ -39,7 +39,7 @@
         </nav>
     </header>
     <main class="page__main page__main--form">
-        <h1 class="page__title">Подбор программы</h1>
+        <h1 class="page__title page__title--form">Подбор программы</h1>
         <p class="page__text">
             Заполните анкету, и мы подберем программу питания для вашего кота
         </p>
@@ -64,17 +64,17 @@
             <fieldset class="form__fieldset">
                 <legend class="form__legend visually-hidden">Выбор программы:</legend>
                 <ul class="form__list">
-                    <li class="form__item">
+                    <li class="form__item form__item--filter">
                         <input class="form__input form__input--filter" type="radio" name="power" value="rechargeable" id="filter-slimming" checked>
-                        <label class="form__label" for="filter-slimming">Похудение</label>
+                        <label class="form__label form__label--filter" for="filter-slimming">Похудение</label>
                     </li>
-                    <li class="form__item">
+                    <li class="form__item form__item--filter">
                         <input class="form__input form__input--filter" type="radio" name="power" value="network" id="filter-weight">
-                        <label class="form__label" for="filter-weight">Набор массы</label>
+                        <label class="form__label form__label--filter" for="filter-weight">Набор массы</label>
                     </li>
-                    <li class="form__item">
+                    <li class="form__item form__item--filter">
                         <input class="form__input form__input--filter" type="radio" name="power" value="network" id="filter-consultation">
-                        <label class="form__label" for="filter-consultation">Не знаю (Нужен ваш совет)</label>
+                        <label class="form__label form__label--filter" for="filter-consultation">Не знаю (Нужен ваш совет)</label>
                     </li>
                 </ul>
             </fieldset>
@@ -101,19 +101,19 @@
                 <ul class="form__list">
                     <li class="form__item">
                         <input class="form__input form__input--checkbox" type="checkbox" name="sugar" id="filter-sugar" checked>
-                        <label class="form__label" for="filter-sugar">Сахаразаменитель</label>
+                        <label class="form__label form__label--checkbox" for="filter-sugar">Сахаразаменитель</label>
                     </li>
                     <li class="form__item">
                         <input class="form__input form__input--checkbox" type="checkbox" name="water " id="filter-water">
-                        <label class="form__label" for="filter-water">Питьевая вода</label>
+                        <label class="form__label form__label--checkbox" for="filter-water">Питьевая вода</label>
                     </li>
                     <li class="form__item">
                         <input class="form__input form__input--checkbox" type="checkbox" name="milk" id="filter-milk" checked>
-                        <label class="form__label" for="filter-milk">Молоко</label>
+                        <label class="form__label form__label--checkbox" for="filter-milk">Молоко</label>
                     </li>
                     <li class="form__item">
                         <input class="form__input form__input--checkbox" type="checkbox" name="vitamins" id="filter-vitamins">
-                        <label class="form__label" for="filter-vitamins">Витамины</label>
+                        <label class="form__label form__label--checkbox" for="filter-vitamins">Витамины</label>
                     </li>
                 </ul>
                 <button class="button" type="submit">Отправить зявку</button>
