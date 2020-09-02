@@ -4,6 +4,7 @@
 }
 
 .form__fieldset {
+    .indents(@margin: 0 0 27px 0; @padding: 0);
     border: none;
 }
  .form__legend {
@@ -48,6 +49,13 @@
 }
 
 .form__input {
+    .indents(@margin: 0; @padding: 14px 18px);
+    .font-oswald(@family:"Oswald", "Arial", sans-serif; @style: normal);
+    .font-size(@size: 16px; @weight: 400);
+    border: 1px solid @basic_grey-3;
+    text-transform: uppercase;
+    color: @special_dark-grey;
+    flex-grow: 1;
     &--filter {
         flex-grow: 0;
         .indents(@margin: 0; @padding: 6px 0);
@@ -58,12 +66,22 @@
     }
     &--textarea {
         width: 100%;
+        resize: none;
     }
-    .indents(@margin: 0; @padding: 14px 0);
-    .font-oswald(@family:"Oswald", "Arial"; @style: normal);
-    .font-size(@size: 16px; @weight: 400);
-    border: 1px solid @basic_grey-3;
-    text-transform: uppercase;
-    color: @special_dark-grey;
-    flex-grow: 1;
 }
+
+.form__button {
+    .indents(@margin: 0 0 21px 0; @padding: 10px 0);
+}
+
+.form__text {
+    display: flex;
+    justify-content: center;
+    .font-oswald(@family: "Arial", "Helvetica", sans-serif; @style: normal);
+    .indents(@margin: 0; @padding: 0);
+}
+
+.form__input::-webkit-input-placeholder { color: @special_dark-grey; }
+.form__input::-ms-input-placeholder { color: @special_dark-grey; }
+.form__input::-ms-input-placeholder { color: @special_dark-grey; }
+.form__input::placeholder { color: @special_dark-grey; }

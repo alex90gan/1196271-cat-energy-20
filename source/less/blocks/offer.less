@@ -11,6 +11,11 @@
 
 .offer__header {}
 
+.offer__title {
+    color: @basic_white;
+    margin-bottom: 25px;
+}
+
 .offer__image-container {flex-grow: 2;
     min-height: 305px;
     background: @basic_green url(../img/index-background-mobile@1x.jpg) no-repeat top left;
@@ -18,8 +23,6 @@
 }
 
 .offer__text {
-    .font-oswald(@family: Oswald; @style: normal);
-    .font-size(@size: 14px; @weight: 400);
     color: @basic_white;
     text-transform: uppercase;
     line-height: 14px;
@@ -30,4 +33,7 @@
 .offer__image {}
 
 .offer__link {
+    display: block;
+    padding: 7px 0;
+    width: 88%;
 }

@@ -9,33 +9,35 @@
 
 <body class="page__body">
     <header class="page__header page-header page-header--catalog">
-        <a class="page-header__logo">
-            <img class="page-header__image" src="img/svg/logo-mobile.svg" width="33" height="38" alt="Логотип">
-            <img class="page-header__image" src="img/svg/logotype-mobile.svg" width="101" height="18" alt="Логотип">
-        </a>
         <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">
+            <div class="main-nav__container">
+                <a class="main-nav__logo">
+                    <img class="main-nav__image" src="img/svg/logo-mobile.svg" width="33" height="38" alt="Логотип">
+                </a>
+                <a class="main-nav__logo">
+                    <img class="main-nav__image" src="img/svg/logotype-mobile.svg" width="101" height="18" alt="Логотип">
+                </a>
+                <button class="main-nav__toggle" type="button">
                 <span class="visually-hidden">Открыть меню</span>
             </button>
-            <div class="main-nav__wrapper">
-                <ul class="main-nav__list site-list">
-                    <li class="site-list__item">
-                        <a class="site-list__link" href="index.html">
+            </div>
+            <ul class="main-nav__list site-list">
+                <li class="site-list__item">
+                    <a class="site-list__link" href="index.html">
                             Главная
                         </a>
-                    </li>
-                    <li class="site-list__item site-list__item--active">
-                        <a class="site-list__link">
+                </li>
+                <li class="site-list__item">
+                    <a class="site-list__link" href="catalog.html">
                             Каталог продукции
                         </a>
-                    </li>
-                    <li class="site-list__item">
-                        <a class="site-list__link" href="form.html">
+                </li>
+                <li class="site-list__item site-list__item--active">
+                    <a class="site-list__link">
                             Подбор программы
                         </a>
-                    </li>
-                </ul>
-            </div>
+                </li>
+            </ul>
         </nav>
     </header>
     <main class="page__main">

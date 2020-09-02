@@ -9,14 +9,18 @@
 
 <body class="page__body">
     <header class="page__header page-header">
-        <a class="page-header__logo">
-            <img class="page-header__image" src="img/svg/logo-mobile.svg" width="33" height="38" alt="Логотип">
-            <img class="page-header__image" src="img/svg/logotype-mobile.svg" width="101" height="18" alt="Логотип">
-        </a>
         <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">
-                <span class="visually-hidden">Открыть меню</span>
-            </button>
+            <div class="main-nav__container">
+                <a class="main-nav__logo">
+                    <img class="main-nav__image" src="img/svg/logo-mobile.svg" width="33" height="38" alt="Логотип">
+                </a>
+                <a class="main-nav__logo">
+                    <img class="main-nav__image" src="img/svg/logotype-mobile.svg" width="101" height="18" alt="Логотип">
+                </a>
+                <button class="main-nav__toggle" type="button">
+                    <span class="visually-hidden">Открыть меню</span>
+                </button>
+            </div>
             <ul class="main-nav__list site-list">
                 <li class="site-list__item site-list__item--active">
                     <a class="site-list__link">
@@ -40,10 +44,10 @@
         <section class="offer">
             <header class="offer__header">
                 <div class="offer__image-container">
-                    <h1 class="page__title page__title--index">Функциональное питание для котов</h1>
+                    <h1 class="page__title offer__title">Функциональное питание для котов</h1>
                     <p class="offer__text">Занялся собой? Займись котом!</p>
                 </div>
-                <a class="offer__link button button--offer" href="catalog.html">
+                <a class="button offer__link" href="catalog.html">
                     Подобрать программу
                 </a>
             </header>
@@ -55,7 +59,7 @@
                 <p class="services-articles__text">
                     Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
                 </p>
-                <a class="services-articles__link" href="catalog.html">
+                <a class="services-articles__link" href="#">
                     Каталог Slim
                 </a>
             </article>
@@ -64,7 +68,7 @@
                 <p class="services-articles__text">
                     Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
                 </p>
-                <a class="services-articles__link" href="catalog.html">
+                <a class="services-articles__link" href="#">
                     Каталог Pro
                 </a>
             </article>

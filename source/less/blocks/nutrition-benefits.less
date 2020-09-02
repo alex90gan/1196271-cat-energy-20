@@ -1,5 +1,4 @@
 .nutrition-benefits {
-    .font-oswald(@family: Oswald; @style: normal);
     width: 100%;
     .indents(@margin: 0 auto; @padding: 0 20px);
     display: flex;
@@ -8,7 +7,6 @@
 }
 
 .nutrition-benefits__title {
-    display: block;
     .font-size(@size: 36px; @weight: 400);
     margin-bottom: 38px;
 }
@@ -23,8 +21,7 @@
 
 .nutrition-benefits__text {
     display: block;
-    .font-oswald(@family: Arial; @style: normal);
-    .font-size(@size: 14px; @weight: 400);
+    .font-oswald(@family: "Arial", "Helvetica", sans-serif; @style: normal);
     .indents(@margin: 0; @padding: 0);
-    line-height: 18px;
+    color: @special_dark-grey;
 }
