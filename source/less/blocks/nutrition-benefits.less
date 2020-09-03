@@ -1,0 +1,27 @@
+.nutrition-benefits {
+    width: 100%;
+    .indents(@margin: 0 auto; @padding: 0 20px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.nutrition-benefits__title {
+    .font-size(@size: 36px; @weight: 400);
+    margin-bottom: 38px;
+}
+
+.nutrition-benefits__list {
+    .reset-list();
+}
+
+.nutrition-benefits__item {
+    margin-bottom: 20px;
+}
+
+.nutrition-benefits__text {
+    display: block;
+    .font-oswald(@family: "Arial", "Helvetica", sans-serif; @style: normal);
+    .indents(@margin: 0; @padding: 0);
+    color: @special_dark-grey;
+}

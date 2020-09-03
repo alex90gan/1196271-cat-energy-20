@@ -8,38 +8,40 @@
 </head>
 
 <body class="page__body">
-    <header class="page-header">
-        <a class="page-header__logo">
-            <img class="page-header__image" src="img/svg/logo-mobile.svg" width="33" height="38" alt="Логотип">
-            <img class="page-header__image " src="img/svg/logotype-mobile.svg" width="101" height="18" alt="Логотип">
-        </a>
+    <header class="page__header page-header">
         <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">
+            <div class="main-nav__container">
+                <a class="main-nav__logo">
+                    <img class="main-nav__image" src="img/svg/logo-mobile.svg" width="33" height="38" alt="Логотип">
+                </a>
+                <a class="main-nav__logo">
+                    <img class="main-nav__image" src="img/svg/logotype-mobile.svg" width="101" height="18" alt="Логотип">
+                </a>
+                <button class="main-nav__toggle" type="button">
                 <span class="visually-hidden">Открыть меню</span>
             </button>
-            <div class="main-nav__wrapper">
-                <ul class="main-nav__list site-list">
-                    <li class="site-list__item">
-                        <a class="site-list__link" href="index.html">
-                            Главная
-                        </a>
-                    </li>
-                    <li class="site-list__item">
-                        <a class="site-list__link" href="catalog.html">
-                            Каталог продукции
-                        </a>
-                    </li>
-                    <li class="site-list__item site-list__item--active">
-                        <a class="site-list__link">
-                            Подбор программы
-                        </a>
-                    </li>
-                </ul>
             </div>
+            <ul class="main-nav__list site-list">
+                <li class="site-list__item">
+                    <a class="site-list__link" href="index.html">
+                        Главная
+                    </a>
+                </li>
+                <li class="site-list__item">
+                    <a class="site-list__link" href="catalog.html">
+                        Каталог продукции
+                    </a>
+                </li>
+                <li class="site-list__item site-list__item--active">
+                    <a class="site-list__link">
+                        Подбор программы
+                    </a>
+                </li>
+            </ul>
         </nav>
     </header>
     <main class="page__main page__main--form">
-        <h1 class="page__title">Подбор программы</h1>
+        <h1 class="page__title page__title--form">Подбор программы</h1>
         <p class="page__text">
             Заполните анкету, и мы подберем программу питания для вашего кота
         </p>
@@ -64,17 +66,17 @@
             <fieldset class="form__fieldset">
                 <legend class="form__legend visually-hidden">Выбор программы:</legend>
                 <ul class="form__list">
-                    <li class="form__item">
+                    <li class="form__item form__item--filter">
                         <input class="form__input form__input--filter" type="radio" name="power" value="rechargeable" id="filter-slimming" checked>
-                        <label class="form__label" for="filter-slimming">Похудение</label>
+                        <label class="form__label form__label--filter" for="filter-slimming">Похудение</label>
                     </li>
-                    <li class="form__item">
+                    <li class="form__item form__item--filter">
                         <input class="form__input form__input--filter" type="radio" name="power" value="network" id="filter-weight">
-                        <label class="form__label" for="filter-weight">Набор массы</label>
+                        <label class="form__label form__label--filter" for="filter-weight">Набор массы</label>
                     </li>
-                    <li class="form__item">
+                    <li class="form__item form__item--filter">
                         <input class="form__input form__input--filter" type="radio" name="power" value="network" id="filter-consultation">
-                        <label class="form__label" for="filter-consultation">Не знаю (Нужен ваш совет)</label>
+                        <label class="form__label form__label--filter" for="filter-consultation">Не знаю (Нужен ваш совет)</label>
                     </li>
                 </ul>
             </fieldset>
@@ -101,23 +103,23 @@
                 <ul class="form__list">
                     <li class="form__item">
                         <input class="form__input form__input--checkbox" type="checkbox" name="sugar" id="filter-sugar" checked>
-                        <label class="form__label" for="filter-sugar">Сахаразаменитель</label>
+                        <label class="form__label form__label--checkbox" for="filter-sugar">Сахаразаменитель</label>
                     </li>
                     <li class="form__item">
                         <input class="form__input form__input--checkbox" type="checkbox" name="water " id="filter-water">
-                        <label class="form__label" for="filter-water">Питьевая вода</label>
+                        <label class="form__label form__label--checkbox" for="filter-water">Питьевая вода</label>
                     </li>
                     <li class="form__item">
                         <input class="form__input form__input--checkbox" type="checkbox" name="milk" id="filter-milk" checked>
-                        <label class="form__label" for="filter-milk">Молоко</label>
+                        <label class="form__label form__label--checkbox" for="filter-milk">Молоко</label>
                     </li>
                     <li class="form__item">
                         <input class="form__input form__input--checkbox" type="checkbox" name="vitamins" id="filter-vitamins">
-                        <label class="form__label" for="filter-vitamins">Витамины</label>
+                        <label class="form__label form__label--checkbox" for="filter-vitamins">Витамины</label>
                     </li>
                 </ul>
-                <button class="button" type="submit">Отправить зявку</button>
-                <small>* — Обязательные поля</small>
+                <button class="form__button button" type="submit">Отправить зявку</button>
+                <p class="form__text">* — Обязательные поля</p>
             </fieldset>
         </form>
         <section class="location">
@@ -135,7 +137,7 @@
             <img class="location__image" src="img/png/location.png" width="320" height="362" alt="Карта проезда">
         </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page__footer page-footer">
         <a class="page-footer__link">
             <img class="page-footer__image" src="img/svg/logotype-mobile.svg" width="128" height="24" alt="Логотип">
         </a>
