@@ -5,6 +5,13 @@
     .reset-list();
     display: flex;
     flex-direction: column;
+    @media (min-width: @tablet-width) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        min-width: 440px;
+        flex-grow: 2;
+    }    
 }
 
 .site-list__item {
@@ -22,4 +29,11 @@
     .reset-link();
     padding-top: 22px;
     padding-bottom: 24px;
+    @media (min-width: @tablet-width) {
+        .font-size(@size: 18px; @weight: 400);
+    }
 }
+
+@media (min-width: @tablet-width) {}
+
+@media (min-width: @desktop-width) {}

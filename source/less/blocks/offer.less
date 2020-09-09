@@ -7,6 +7,9 @@
     background: @basic_white;
     .indents(@margin: 0 auto; @padding: 0);
     margin-bottom: 22px;
+    @media (min-width: @tablet-width) {
+        align-items: flex-start;
+    }
 }
 
 .offer__header {}
@@ -14,12 +17,34 @@
 .offer__title {
     color: @basic_white;
     margin-bottom: 25px;
+    @media (min-width: @tablet-width) {
+        color: @basic_black;
+        .indents(@margin: 0 auto 41px 117px; @padding: 0);
+    }
 }
 
-.offer__image-container {flex-grow: 2;
+.offer__image-container {
+    position: relative;
     min-height: 305px;
     background: @basic_green url(../img/index-background-mobile@1x.jpg) no-repeat top left;
     margin-bottom: 135px;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: @tablet-width) {
+        align-items: flex-start;
+        background: @basic_white;
+        .indents(@margin: 0; @padding: 0);
+        &::after {
+            z-index: 1;
+            content: "";
+            position: absolute;
+            top: 139px;
+            left: 30px;
+            width: 709px;
+            height: 609px;
+            background: url("../img/index-can-tablet@1x.jpg") no-repeat top left; 
+        }
+    }
 }
 
 .offer__text {
@@ -27,13 +52,17 @@
     text-transform: uppercase;
     line-height: 14px;
     text-align: center;
-    margin: auto;
+    margin: 0 auto;
+    @media (min-width: @tablet-width) {
+        color: @basic_black;
+        text-align: start;
+        .indents(@margin: 0 auto 49px 118px; @padding: 0);
+    }
 }
 
 .offer__image {}
 
-.offer__link {
-    display: block;
-    padding: 7px 0;
-    width: 88%;
-}
+
+@media (min-width: @tablet-width) {}
+
+@media (min-width: @desktop-width) {}
