@@ -19,14 +19,15 @@
         color: @special_dark-grey;
         margin-bottom: 25px;
     }
-    &--offer__link {
+    &--offer {
         .indents(@margin: 0 auto; @padding: 7px 0);
-        width: 280px;
         @media (min-width: @tablet-width) {
+            position: absolute;
+            top: 160px;
             z-index: 2;
             width: 244px;
-            .indents(@margin: 0 auto 0 112px; @padding: 14px 0);
             .font-size(@size: 20px; @weight: 400);
+            .indents(@margin: 0 auto 0px 83px; @padding: 14px 0);
         }    
     }
 }
